@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { RecoilRoot } from 'recoil'
+import Landing from './screens/Landing'
+import About from './screens/About'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <RecoilRoot>
+            <Router>
+                <Switch>
+                    <Route path="/about">
+                        <About />
+                    </Route>
+                    <Route path="/">
+                        <Landing />
+                    </Route>
+                </Switch>
+            </Router>
+        </RecoilRoot>
+    )
 }
 
-export default App;
+export default App
