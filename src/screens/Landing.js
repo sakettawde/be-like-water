@@ -37,7 +37,6 @@ const Landing = (props) => {
     const check = () => {
         const audio = document.getElementById('audioSource')
         audio.play()
-        console.log(audio)
         setShow(!show)
     }
 
@@ -70,7 +69,6 @@ const Landing = (props) => {
                     </h1>
                 )}
                 <button onClick={check}>Play</button>
-                {/* <audio controls> */}
                 <audio id="audioSource">
                     <source src="/assets/be-like-water.mp3" type="audio/mpeg" />
                 </audio>
