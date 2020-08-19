@@ -70,8 +70,8 @@ const Landing = (props) => {
                     </h1>
                 )}
                 <button onClick={check}>Play</button>
-                <audio controls>
-                    {/* <audio id="audioSource"> */}
+                {/* <audio controls> */}
+                <audio id="audioSource">
                     <source src="/assets/be-like-water.mp3" type="audio/mpeg" />
                 </audio>
             </>
