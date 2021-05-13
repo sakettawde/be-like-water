@@ -13,6 +13,7 @@
 
 # generated
 *.generated.*
+.lighthouseci
 
 # misc
 .DS_Store
